@@ -16,16 +16,30 @@ html {
 
 #navbar {
   width: 30%;
+  padding: 30px;
 }
 
 #navbar a {
   display: block;
 }
 
+/* main section =========================================================================== */
+
 #main-doc {
   /* Take the remaining width */
   flex: 1;
+  padding: 30px;
   
   /* Make it scrollable */
   overflow: auto;
+}
+
+@media only screen and (max-width: 650) {
+  .container {
+    flex-direction: column;
+  }
+
+  #navbar {
+    width: 100%;
+  }
 }
