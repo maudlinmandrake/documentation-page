@@ -8,38 +8,68 @@ html {
   font-weight: 300;
 }
 
-.container {
+body {
+  padding: 0;
+  margin: 0;
   display: flex;
 }
 
-/* navigation ============================================================================== */ 
+hr {
+  border-top: 1px solid #000;
+  border-bottom: none;
+  margin: 20px auto;
+}
+
+/* navigation =========================================================== */
 
 #navbar {
-  width: 30%;
-  padding: 30px;
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F6BA1B;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow-y: auto;
 }
 
-#navbar a {
-  display: block;
-}
-
-/* main section =========================================================================== */
+/* main content area =================================================== */
 
 #main-doc {
-  /* Take the remaining width */
-  flex: 1;
-  padding: 30px;
-  
-  /* Make it scrollable */
-  overflow: auto;
+  margin-left: 30%;
+  width: 70%;
 }
 
-@media only screen and (max-width: 650) {
-  .container {
+.main-section {
+  padding: 1.5em;
+}
+
+.main-section header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+/* media queries for responsiveness ==================================== */
+
+@media (max-width: 600px) {
+  body {
     flex-direction: column;
   }
-
+  
   #navbar {
+    position: relative;
     width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1 rem;
+  }
+  
+  #main-doc {
+    width: 100%;
+    margin-left: 0;
   }
 }
