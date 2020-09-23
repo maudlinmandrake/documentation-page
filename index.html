@@ -16,9 +16,9 @@
       </header>
       <a class="nav-link" href="#Introduction">Introduction</a>
       <a class="nav-link" href="#Anatomy_of_HTML">Anatomy of HTML</a>
-      <a class="nav-link" href="">Test Link #3</a>
-      <a class="nav-link" href="">Test Link #4</a>
-      <a class="nav-link" href="">Test Link #5</a>
+      <a class="nav-link" href="#Basic_Set-Up">Basic Set-Up</a>
+      <a class="nav-link" href="#Establishing_Structure">Establishing Structure</a>
+      <a class="nav-link" href="#Formatting_Text">Formatting Text</a>
     </nav>
   
     <!-- Main -->
@@ -44,18 +44,52 @@
           </ul>
         </p>
       </section>
-      <section class="main-section">
-        <header>Header</header>
+      <section class="main-section" id="Basic_Set-Up">
+        <header>Basic Set-Up</header>
+        <p>There's a few set of HTML elements that we must include in every website, and they operate as instructions for the browser, telling it that we're writing an HTML document and thus it needs to be rendered as such in the browser. Many developers save the following code as a snippet so they don't have to write it over and over again, and the popular editor plugin Emmet saves all of it to a keyword that will automatically populate your HTML document with the code upon using it.</p>
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;title&gt;My sweet website&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;p&gt;Hello, world!&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+        </pre>
+        <p>
+          <ol>
+            <li>
+              <b>!DOCTYPE</b> - it used to be that an HTML needed to follow a specific set of rules to be considered good HTML, and the doctype acted as a link to those rules. You don't need to follow those rules or link to them, but this is the bare minimum we need to include to make our website work</li>
+            <li>
+              <b>HTML</b> - this is your root element. It wraps all of the content on your page
+            </li>
+            <li>
+              <b>HEAD</b> - This wraps up information associated with your website, but isn't necessarily content that is viewable on your page. It's where you can put the title and keywords or a description for your website that will show up in search engines
+            </li>
+            <li>
+              <b>META</b> - This specifies the character set that will be used on your document. In this case, we're using UTF-8, which includes most of the characters for the vast majority of human written languages.
+            </li>
+            <li>
+              <b>TITLE</b> - The title of your website! It's what will appear in the tab of the browser or in a bookmark menu if someone adds the page to their bookmarks.
+            </li>
+            <li>
+              <b>BODY</b> - This is the element that will wrap all of your viewable content. It's your working space where you'll add text, images, interactive media like videos, audio, etc.
+            </li>
+          </ol>
+        </p>
+      </section>
+      <section class="main-section" id="Establishing_Structure">
+        <header>Establishing Structure</header>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
-      <section class="main-section">
-        <header>Header</header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-      <section class="main-section">
-        <header>Header</header>
+      <section class="main-section" id="Formatting_Text">
+        <header>Formatting Text</header>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
