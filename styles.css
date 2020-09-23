@@ -1,5 +1,5 @@
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Shrikhand&display=swap');
 
 html {
   padding: 0;
@@ -15,9 +15,9 @@ body {
 }
 
 hr {
-  border-top: 1px solid #000;
+  border-top: 1px solid #29d0be;
   border-bottom: none;
-  margin: 20px auto;
+  margin: 60px auto;
 }
 
 /* navigation =========================================================== */
@@ -28,11 +28,46 @@ hr {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #F6BA1B;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
   overflow-y: auto;
+  color: #fff;
+}
+
+#navbar h1 {
+  font-size: 4rem;
+}
+
+
+#navbar a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+  margin: 30px auto;
+  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: .07em;
+  height: .1em;
+  width: 100%;
+  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  z-index: -1;
+  transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+#navbar a:hover::after {
+  height: .2em;
 }
 
 /* main content area =================================================== */
@@ -48,13 +83,14 @@ hr {
 
 .main-section header {
   font-size: 2rem;
-  font-weight: 700;
+  font-family: "Shrikhand";
+  letter-spacing: 5px;
 }
 
 
 /* media queries for responsiveness ==================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   body {
     flex-direction: column;
   }
@@ -62,6 +98,10 @@ hr {
   #navbar {
     position: relative;
     width: 100%;
+  }
+
+  #navbar h1 {
+    text-align: center;
   }
 
   .nav-link {
