@@ -20,6 +20,25 @@ hr {
   margin: 60px auto;
 }
 
+img {
+  margin: 50px auto;
+  width: 100%;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
 /* navigation =========================================================== */
 
 #navbar {
