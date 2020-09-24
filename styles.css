@@ -100,8 +100,9 @@ img {
 code {
   display: block;
   font-family: "DM Mono";
-  font-size: .6rem;
-  color: #29d0be;
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fff;
   text-align: left;
   white-space: pre;
   position: relative;
@@ -114,6 +115,9 @@ code {
   border-radius: 5px;
 }
 
+code strong {
+  color: #29d0be;
+}
 
 /* footer ============================================================== */
 
