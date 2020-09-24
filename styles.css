@@ -28,6 +28,14 @@ img {
   max-width: 600px;
 }
 
+p strong {
+  background-color: lightgrey;
+}
+
+li strong {
+  background-color: lightgrey;
+}
+
 
 
 /* navigation =========================================================== */

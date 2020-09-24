@@ -92,6 +92,7 @@
       <section class="main-section" id="Establishing_Structure">
         <header>Establishing Structure</header>
         <p>Despite the wide variety of design seen in websites, most sites rely on the same standard components to provide structure and organize information. There are elements for the three components seen on just about any website you come across: the <strong>header</strong>, the <strong>main</strong> section, and a <strong>footer</strong>, and all three have their own tags!
+        </p>
         <code>
           <strong>&lt;header&gt;</strong>
             Welcome to my Website!
@@ -132,7 +133,9 @@
         <p>
           The <strong>footer</strong> is located at the bottom of the page and, like on a document in the real world, may contain copyright information and fine print. Some of the information seen in the header may be repeated here, as well, and often companies will include links to their social media accounts.
         </p>
-        A popular, catch-all HTML element that is often used when structuring and organizing content is the division or <strong>div</strong> tag. Before HTML5 and the addition of elements like <strong>header</strong> or <strong>article</strong>, <strong>div</strong> was the popular choice to divide up an HTML document.
+        <p>
+          A popular, catch-all HTML element that is often used when structuring and organizing content is the division or <strong>div</strong> tag. Before HTML5 and the addition of elements like <strong>header</strong> or <strong>article</strong>, <strong>div</strong> was the popular choice to divide up an HTML document.
+        </p>
       </section>
       <section class="main-section" id="Formatting_Text">
         <header>Formatting Text</header>
@@ -144,6 +147,56 @@
             </li>
             <li><strong>&lt;i&gt;</strong><strong>&lt;/i&gt;</strong> or <strong>&lt;em&gt;</strong><strong>&lt;/em&gt;</strong> will italicize your text. Like the <strong>strong</strong> tag above, the <strong>em</strong> tag is preferred.</li>
             <li><strong>&lt;u&gt;</strong><strong>&lt;/u&gt;</strong> will underline your text</li>
+            <li><strong>&lt;pre&gt;</strong><strong>&lt;/pre&gt;</strong> defines preformatted text: this is text that uses a fixed-width font, and will also preserve spaces and line breaks. A good example of this is the code you see in the black boxes throughout this document.</li>
+          </ol>
+        </p>
+        <p>You can also define headings of varying levels using the header tags. There are 6 of them, designating a hierarchy of information</p>
+        <code>
+          <strong>&lt;h1&gt;</strong>This is a level 1 heading; it's the largest<strong>&lt;/h1&gt;</strong>
+          <strong>&lt;h2&gt;</strong>This is a level 2 heading<strong>&lt;/h2&gt;</strong>
+          <strong>&lt;h3&gt;</strong>This is a level 3 heading<strong>&lt;/h3&gt;</strong>
+          <strong>&lt;h4&gt;</strong>This is a level 4 heading<strong>&lt;/h4&gt;</strong>
+          <strong>&lt;h5&gt;</strong>This is a level 5 heading<strong>&lt;/h5&gt;</strong>
+          <strong>&lt;h6&gt;</strong>This is a level 6 heading; it's the smallest<strong>&lt;/h6&gt;</strong>
+        </code>
+        <p>When rendered in the browser, the above will look like this:
+          <h1>This is a level 1 heading; it's the largest</h1>
+          <h2>This is a level 2 heading</h2>
+          <h3>This is a level 3 heading</h3>
+          <h4>This is a level 4 heading</h4>
+          <h5>This is a level 5 heading</h5>
+          <h6>This is a level 6 heading; it's the smallest</h6>
+        </p>
+        <p>HTML also makes it really easy to create pre-styled lists. The ones used the most are the unordered list (<strong>ul</strong>) and the ordered list (<strong>ol</strong>). You define your list by using one of the above tags, and then each individual item in your list must be then wrapped in the list (<strong>li</strong>) element.</p>
+        <code>
+          <strong>&lt;ul&gt;</strong>
+            <strong>&lt;li&gt;</strong>Milk<strong>&lt;/li&gt;</strong>
+            <strong>&lt;li&gt;</strong>Eggs<strong>&lt;/li&gt;</strong>
+            <strong>&lt;li&gt;</strong>Diapers<strong>&lt;/li&gt;</strong>
+          <strong>&lt;/ul&gt;</strong>
+        </code>
+        <p>
+          The unordered list will look like this when rendered in the browser
+          <ul>
+            <li>Milk</li>
+            <li>Eggs</li>
+            <li>Diapers</li>
+          </ul>
+        </p>
+        <p>And an ordered list...</p>
+        <code>
+          <strong>&lt;ol&gt;</strong>
+            <strong>&lt;li&gt;</strong>Sushi<strong>&lt;/li&gt;</strong>
+            <strong>&lt;li&gt;</strong>Pizza<strong>&lt;/li&gt;</strong>
+            <strong>&lt;li&gt;</strong>Bread<strong>&lt;/li&gt;</strong>
+          <strong>&lt;/ol&gt;</strong>
+        </code>
+        <p>
+          ...will look like this
+          <ol>
+            <li>Sushi</li>
+            <li>Pizza</li>
+            <li>Bread</li>
           </ol>
         </p>
       </section>
