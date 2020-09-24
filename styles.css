@@ -1,5 +1,5 @@
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rakkas&display=swap');
 
 html {
   padding: 0;
@@ -46,7 +46,8 @@ img {
 }
 
 #navbar h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-family: "Rakkas";
 }
 
 
@@ -92,7 +93,7 @@ img {
 
 .main-section header {
   font-size: 2rem;
-  font-family: "Shrikhand";
+  font-family: "Rakkas";
 }
 
 code {
